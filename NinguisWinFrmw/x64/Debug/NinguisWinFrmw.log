@@ -1,0 +1,11 @@
+﻿  ConfigDefines.cpp
+c:\engine building\ninguisproject\ninguisproject\ninguiswinfrmw\configdefines.cpp(6): error C2511: 'ConfigDefines::ConfigDefines(void)': overloaded member function not found in 'ConfigDefines'
+  c:\engine building\ninguisproject\ninguisproject\ninguiswinfrmw\configdefines.h(7): note: see declaration of 'ConfigDefines'
+  SignletonTemplate.cpp
+c:\engine building\ninguisproject\ninguisproject\ninguiswinfrmw\signletontemplate.cpp(2): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+  ConfigHandler.cpp
+c:\engine building\ninguisproject\ninguisproject\ninguiswinfrmw\singletontemplate.h(21): error C2440: 'return': cannot convert from 'ConfigDefines &(void)' to 'ConfigDefines &'
+  c:\engine building\ninguisproject\ninguisproject\ninguiswinfrmw\singletontemplate.h(19): note: while compiling class template member function 'ConfigDefines &SingletonTemplate<ConfigDefines>::instance(void)'
+  c:\engine building\ninguisproject\ninguisproject\ninguiswinfrmw\confighandler.cpp(23): note: see reference to function template instantiation 'ConfigDefines &SingletonTemplate<ConfigDefines>::instance(void)' being compiled
+  c:\engine building\ninguisproject\ninguisproject\ninguiswinfrmw\configdefines.h(8): note: see reference to class template instantiation 'SingletonTemplate<ConfigDefines>' being compiled
+  Generating Code...
