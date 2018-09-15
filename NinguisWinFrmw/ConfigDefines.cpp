@@ -1,9 +1,11 @@
 #include "stdafx.h"
 #include "ConfigDefines.h"
 
+using namespace NinguisFramework;
 
-ConfigDefines::ConfigDefines()
+ConfigDefines::ConfigDefines(token)
 {
+	configVariables = new ConfigVariables;
 }
 
 

@@ -1,26 +1,31 @@
 #pragma once
-
+#pragma comment(lib, "comsuppw")
 #include <iostream>
-#include <ShlObj_core.h>
+#include <shlobj.h>
 
 #include "ConfigDefines.h"
 
-class ConfigHandler
+namespace NinguisFramework
 {
-public:
-	ConfigHandler();
-	~ConfigHandler();
-	void SetConfigFile();
-	void ReadConfigFile();
+	class ConfigHandler
+	{
+	public:
+		ConfigHandler();
+		~ConfigHandler();
+		void LoadConfigFile();
+		void SetConfigFile();
+		std::string returnSetting();
+	private:
+		bool CreateConfigFile();
+		bool SetToDefaults();
+		void ReadConfigFile();
+		bool CreateUserInfoFolder();
 
-private:
-	void LoadConfigFile();
-	void CreateConfigFile();
-	void SetToDefaults();
+		PWSTR* dirUserDoc;
+		LPCSTR dirProjectSettings;
+		HRESULT result;
+		bool procedureResult;
+		HANDLE configFileHandle;
 
-	PWSTR* ConfigPath;
-	
-	HRESULT result;
-
-};
-
+	};
+}
