@@ -1,11 +1,11 @@
 
 #include "MessageTypes.h"
-
+/*
 template<typename T>
 class Packet
 {
 	T data;
-	unsifned char buff[sizeof(T)]
+	unsifned char buff[sizeof(T)];
 };
 
 template<typename T>
@@ -21,4 +21,5 @@ public:
 	Packet data;
 
 };
+*/
 

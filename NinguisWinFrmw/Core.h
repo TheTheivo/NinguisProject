@@ -13,7 +13,7 @@
 #include "ConfigHandler.h"
 #include "Resource.h"
 #include "stdafx.h"
-#include "GuiCore.h"
+//#include "GuiCore.h"
 
 
 // GUI elements IDs
@@ -88,7 +88,7 @@ namespace NinguisFramework
 		WCHAR szWindowClass[MAX_LOADSTRING];/*The main window class name*/
 
 		ConfigHandler * configHandler;
-		GuiCore * guiCore;
+		//GuiCore * guiCore;
 	};
 
 	/*
